@@ -1,0 +1,13 @@
+<% var data = {
+  title: "Заголовок | Проект",
+  author: "Serega"
+}; %>
+
+
+<%= _.template(require('./../includes/_mainBegin.html'))(data) %>
+
+<%= _.template(require('./../includes/_indexSections/_indexSection1.html'))(data) %>
+<%= _.template(require('./../includes/_indexSections/_indexSection2.html'))(data) %>
+<%= _.template(require('./../includes/_indexSections/_indexSection3.html'))(data) %>
+
+<%= _.template(require('./../includes/_mainEnd.html'))(data) %>

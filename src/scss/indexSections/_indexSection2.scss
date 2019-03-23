@@ -1,0 +1,52 @@
+.sect-feat {
+	padding: 120px 0 160px;
+	background-color: #f6f5f3;	
+	background-image: url("../img/_style/feat-sect-bg-img-1.jpg"), url("../img/_style/feat-sect-bg-img-2.jpg");
+	background-position: center top 0, center bottom 0;
+	background-size: auto,auto;
+	background-repeat: no-repeat;
+
+	.sect-inner {
+
+	}
+
+	.title-wrap {
+		margin-bottom: 45px;
+	}
+
+	.title-descr {
+
+	}
+
+	.h2-title {
+
+	}
+
+	.sect-txt {
+
+	}
+
+	.feat-item {
+		text-align: center;
+		margin-bottom: 15px;
+	}
+
+	.feat-icon {
+		margin: auto;
+		width: 60px;
+		height: 60px;		
+		background-size: cover;
+		background-repeat: no-repeat;
+		margin-bottom: 20px;
+	}
+
+	.feat-title {
+		margin-bottom: 5px;
+		color: $text;
+		font-size: 22px;
+	}
+
+	.feat-descr {
+		color: transparentize($text, 0.4);
+	}
+}

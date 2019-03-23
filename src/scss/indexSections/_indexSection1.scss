@@ -1,0 +1,64 @@
+.sect-design {
+	position: relative;
+	min-height: 725px;
+	padding: 25px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	
+	&::after,
+	&::before {
+		content: "";
+		display: block;
+		position: absolute;
+	}
+
+	&::before {
+		width: 570px;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		background-color: $grayColor;
+	}
+
+	&::after {
+		width: 3000px;
+		height: 3000px;
+		background-color: $main;
+		bottom: 0;
+		left: calc(100% - 570px);
+		transform: rotate(45deg);
+		transform-origin: 0 100%;
+	}
+
+	.sect-inner {
+		width: 50%;
+	}
+
+	.title-wrap {
+		text-align: left;
+	}
+
+	.title-descr {
+
+	}
+
+	.h2-title {
+		.title-dots {
+			color: $main;
+		}
+	}	
+
+	.sect-txt {
+		color: transparentize($text, 0.35);
+
+		p {
+			margin-bottom: 25px;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}	
+	}
+}
