@@ -1,17 +1,43 @@
-.sect-feat {
-	padding: 120px 0 160px;
-	background-color: #f6f5f3;	
-	background-image: url("../img/_style/feat-sect-bg-img-1.jpg"), url("../img/_style/feat-sect-bg-img-2.jpg");
-	background-position: center top 0, center bottom 0;
-	background-size: auto,auto;
-	background-repeat: no-repeat;
+.sect-design {
+	position: relative;
+	min-height: 725px;
+	padding: 25px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	
+	&::after,
+	&::before {
+		content: "";
+		display: block;
+		position: absolute;
+	}
+
+	&::before {
+		width: 570px;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		background-color: $grayColor;
+	}
+
+	&::after {
+		width: 3000px;
+		height: 3000px;
+		background-color: $main;
+		bottom: 0;
+		left: calc(100% - 570px);
+		transform: rotate(45deg);
+		transform-origin: 0 100%;
+	}
 
 	.sect-inner {
-
+		width: 50%;
 	}
 
 	.title-wrap {
-		margin-bottom: 45px;
+		text-align: left;
 	}
 
 	.title-descr {
@@ -19,34 +45,20 @@
 	}
 
 	.h2-title {
-
-	}
+		.title-dots {
+			color: $main;
+		}
+	}	
 
 	.sect-txt {
+		color: transparentize($text, 0.35);
 
-	}
+		p {
+			margin-bottom: 25px;
+		}
 
-	.feat-item {
-		text-align: center;
-		margin-bottom: 15px;
-	}
-
-	.feat-icon {
-		margin: auto;
-		width: 60px;
-		height: 60px;		
-		background-size: cover;
-		background-repeat: no-repeat;
-		margin-bottom: 20px;
-	}
-
-	.feat-title {
-		margin-bottom: 5px;
-		color: $text;
-		font-size: 22px;
-	}
-
-	.feat-descr {
-		color: transparentize($text, 0.4);
+		&:last-child {
+			margin-bottom: 0;
+		}	
 	}
 }

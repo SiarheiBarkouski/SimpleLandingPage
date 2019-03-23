@@ -1,0 +1,36 @@
+.btn-wrap {
+	text-align: center;
+}
+
+
+.btn {
+	appearance: none;
+	display: inline-block;
+	padding: 13px 15px 10px;
+	height: 50px;
+	border-radius: 3px;
+	background-color: $main;
+	min-width: 190px;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none !important;
+	border: 1px solid $main;
+
+	&:hover {
+		color: $main;
+		background-color: transparent;
+	}
+
+	&:active {
+		opacity: .8;
+	}
+}
+
+
+.btn-play {
+	display: inline-block;
+	width: 59px;
+	height: 59px;
+	background-image: url("../img/_style/play-video.png");
+	cursor: pointer;
+}

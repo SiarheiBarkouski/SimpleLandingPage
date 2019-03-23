@@ -1,64 +1,69 @@
-.sect-design {
+.main-head {
+	
+}
+
+.top-screen {
+	background-color: #acb4f3;
 	position: relative;
-	min-height: 725px;
-	padding: 25px 0;
+}
+
+
+.top-video-wrap {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	bottom: 0;
+}
+
+.top-video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.top-txt-wrap {
+	position: relative;
+	z-index: 2;
+	min-height: 100vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	overflow: hidden;
 	
-	&::after,
-	&::before {
-		content: "";
-		display: block;
-		position: absolute;
+
+	.row {
+		align-items: center;
+		justify-content: center;
 	}
 
-	&::before {
-		width: 570px;
-		top: 0;
-		bottom: 0;
-		right: 0;
-		background-color: $grayColor;
-	}
-
-	&::after {
-		width: 3000px;
-		height: 3000px;
-		background-color: $main;
-		bottom: 0;
-		left: calc(100% - 570px);
-		transform: rotate(45deg);
-		transform-origin: 0 100%;
-	}
-
-	.sect-inner {
-		width: 50%;
-	}
 
 	.title-wrap {
-		text-align: left;
-	}
-
-	.title-descr {
 
 	}
 
-	.h2-title {
-		.title-dots {
-			color: $main;
-		}
-	}	
 
-	.sect-txt {
-		color: transparentize($text, 0.35);
+	.h1-title {
+		margin-bottom: 35px;
+	}
 
-		p {
-			margin-bottom: 25px;
-		}
+	.btn-play {
 
-		&:last-child {
-			margin-bottom: 0;
-		}	
+	}
+
+	.btn-wrap {
+
+	}
+
+	.btn {
+
+	}
+
+
+	.btn-descr {
+		padding-top: 13px;
+		color: transparentize($text, 0.4);
 	}
 }
+

@@ -23,7 +23,7 @@ function generateHtmlPlugins(templateDir) {
 const htmlPlugins = generateHtmlPlugins("./src/html/views");
 
 const config = {
-  entry: ["./src/js/index.js", "./src/scss/style.scss"],
+  entry: ["./src/js/index.js", "./src/scss/style.main.scss"],
   output: {
     filename: "./js/bundle.js"
   },
@@ -96,10 +96,6 @@ const config = {
       {
         from: "./src/fonts",
         to: "./fonts"
-      },
-      {
-        from: "./src/favicon",
-        to: "./favicon"
       },
       {
         from: "./src/img",
