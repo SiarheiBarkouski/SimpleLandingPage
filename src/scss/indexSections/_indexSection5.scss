@@ -1,0 +1,70 @@
+.sect-review {
+	background-image: url("../img/_style/review-bg.png");
+	padding: 110px 0 55px;
+
+	.sect-inner {
+
+
+		.review-item {
+			text-align: center;
+
+			.review-photo {
+				display: inline-block;
+				width: 76px;
+				height: 76px;
+				background-color: #4e4e5e;
+				margin-bottom: 15px;
+				img {
+					display: block;
+					width: 100%
+				}
+			}
+			.review-name {
+				color: white;
+				font-size: 22px;		
+				margin-bottom: 5px;		
+			}
+			.review-post {
+				color: $main; 
+				margin-bottom: 20px;
+			}
+			.review-descr {
+				color:white;
+				opacity: .65;
+				font-family: "ExoRegular", sans-serif;
+				font-style: italic;
+			}
+		}
+	}
+
+	.partner-row {
+		padding-top: 55px;
+		align-items: center;
+		justify-content: center;
+
+		.partner-logo {
+			display: inline-block;
+			width: 190px;
+			height: 100px;
+			background-repeat: no-repeat;
+			background-image: url("../img/_style/logos-sprite.png");			
+			background-position: left 0 center; 
+		}
+
+		.partner-1 {
+			background-position: left 33px center; 
+		}
+		.partner-2 {
+			background-position: left -178px center; 
+		}
+		.partner-3 {
+			background-position: left -388px center; 
+		}
+		.partner-4 {
+			background-position: left -596px center; 
+		}
+		.partner-5 {
+			background-position: left -808px center; 
+		}
+	}
+}
