@@ -1,0 +1,86 @@
+.sect-feat-3 {
+	@extend .sect-feat-2;
+	background-color: $accent;
+	padding: 90px 0 80px;
+
+	.title-wrap {
+		color: white;
+	}
+
+	.feat-form {
+		padding-top: 50px;
+
+		.btn-wrap, .custom-input {
+			position: relative;
+			margin-bottom: 30px;
+		}
+
+		.custom-input {
+			display: block;
+			input {
+				appearance: none;
+				display: block;
+				width: 100%;
+				text-transform: uppercase;
+				background-color: transparentize(#f6f5f3,.9);
+				border-radius: 3px;
+				border: 1px solid #999cb4;
+				height: 50px;
+				font-family: "ExoRegular", sans-serif;
+				line-height: 50px;
+				padding: 2px 25px 0;
+				color: white;
+				&::placeholder {
+					color: white;
+					transition: .3s;
+				}
+				&:focus {
+					&::placeholder {
+						opacity: 0;
+					}
+				}
+			}
+		}
+
+		.form-descr {
+			padding-left: 20px 0 0;
+			color: #b2b3be;
+			text-align: center;
+			font-family: "ExoRegular", sans-serif;
+			a {
+				text-decoration: underline;
+				&:hover {
+					text-decoration: none;
+					color: $main;
+				}
+			}
+		}
+	}	
+
+	.btn-wrap {
+		position: relative;
+
+		.btn {
+			width: 100%;
+		}
+
+		.btn-descr {
+			color: white;
+			position: absolute;
+			bottom: 100%;
+			left: 0;
+			text-align: left;
+			display: block;
+			width: 100%; 
+			font-family: "ExoRegular", sans-serif;
+			padding: 0 0 35px 35px;
+			background-image: url("../img/_style/arrow.png");
+			background-repeat: no-repeat;
+			background-position: left 0 bottom 15px;
+			background-size: 56px 41px;
+		}
+	}
+
+
+
+}
